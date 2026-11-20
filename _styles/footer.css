@@ -1,0 +1,139 @@
+footer {
+  background: var(--background-alt);
+  border-top: 1px solid var(--light-gray);
+  line-height: var(--compact);
+}
+
+.f-accent {
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary) 0 62%, var(--accent) 62% 78%, transparent 78%);
+}
+
+.f-main {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  flex-wrap: nowrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 30px 28px 26px;
+  text-align: left;
+}
+
+.f-id {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.f-name {
+  font-family: var(--heading);
+  font-weight: var(--bold);
+  color: var(--primary);
+  font-size: 1.2rem;
+}
+
+.f-kr {
+  font-family: "Noto Sans KR", sans-serif;
+  color: var(--gray);
+  font-size: 0.9rem;
+  margin-top: 2px;
+}
+
+.f-dept {
+  color: var(--gray);
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+.f-logo {
+  display: inline-flex;
+  flex: 0 0 auto;
+  text-decoration: none;
+}
+
+.f-logo img {
+  width: 78px;
+  height: 78px;
+  display: block;
+}
+
+.f-logo-dark,
+[data-dark=true] .f-logo-light {
+  display: none !important;
+}
+
+[data-dark=true] .f-logo-dark {
+  display: block !important;
+}
+
+.f-social {
+  display: flex;
+  gap: 8px;
+}
+
+.f-social a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 999px;
+  background: var(--background);
+  border: 1px solid var(--light-gray);
+  color: var(--primary);
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background var(--transition), border-color var(--transition), color var(--transition), transform var(--transition);
+}
+
+.f-social a:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.f-bottom {
+  border-top: 1px solid var(--light-gray);
+}
+
+.f-bottom-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px 24px;
+  flex-wrap: wrap;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 14px 28px;
+}
+
+.f-copy {
+  color: var(--gray);
+  font-size: 0.8rem;
+}
+
+.f-end {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 680px) {
+  .f-main {
+    gap: 14px;
+  }
+  .f-logo img {
+    width: 56px;
+    height: 56px;
+  }
+  .f-bottom-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/*# sourceMappingURL=footer.css.map */

@@ -1,0 +1,67 @@
+.pub-full {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.pub-years {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 10px 0 20px;
+}
+
+.pub-years a {
+  padding: 3px 12px;
+  border: 1px solid var(--light-gray);
+  border-radius: 999px;
+  color: var(--primary);
+  font-size: 0.9rem;
+  text-decoration: none;
+  transition: background var(--transition);
+}
+
+.pub-years a:hover {
+  background: var(--background-alt);
+}
+
+.pub-years a[aria-pressed=true] {
+  border-color: var(--primary);
+  background: var(--primary);
+  color: var(--background);
+}
+
+.pub-list li[hidden] {
+  display: none;
+}
+
+.pub-list {
+  padding-left: 3em;
+}
+
+.pub-list li {
+  margin-bottom: 0.9em;
+  padding-left: 0.3em;
+  line-height: var(--compact);
+}
+
+.pub-list li::marker {
+  color: var(--gray);
+  font-variant-numeric: tabular-nums;
+}
+
+.pub-authors strong {
+  color: var(--primary);
+}
+
+.pub-title,
+.pub-title:hover {
+  font-weight: var(--semi-bold);
+  text-decoration: none;
+}
+
+.pub-journal {
+  font-style: italic;
+  font-weight: var(--bold);
+}
+
+/*# sourceMappingURL=pub-list.css.map */

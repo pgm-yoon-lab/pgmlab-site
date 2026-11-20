@@ -1,0 +1,18 @@
+a {
+  color: var(--primary);
+  text-decoration-color: var(--accent);
+  text-underline-offset: 3px;
+  transition: color var(--transition);
+  overflow-wrap: break-word;
+}
+
+a:hover {
+  color: var(--primary-deep);
+  text-decoration: underline;
+}
+
+a:not([href]) {
+  color: var(--text);
+}
+
+/*# sourceMappingURL=link.css.map */
