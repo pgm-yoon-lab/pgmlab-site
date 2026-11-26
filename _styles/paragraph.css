@@ -1,0 +1,15 @@
+p {
+  margin: 20px 0;
+  text-align: justify;
+  line-height: var(--spacing);
+}
+
+.hl-body p,
+.research-row p,
+.card-text p,
+.tool-desc,
+.project p {
+  text-align: left;
+}
+
+/*# sourceMappingURL=paragraph.css.map */
